@@ -1,4 +1,4 @@
-## Translate OpenSprinkler Pi user interface
+## Translate OpenSprinkler Pi web interface
 1. Get Poedit program (free): [https://poedit.net/download]
 2. Get file: OSPi\i18n\ospi_messages.pot
 3. Open ospi_messages.pot file in poedit and add your translations
