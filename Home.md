@@ -2,7 +2,6 @@
 #####Here you will find documentation for:
 
 - [Translating the web interface into your favorite language](https://github.com/Dan-in-CA/OSPi/wiki/Translation-doc)
-
 - [Writing plugins to add new custom capabilities](https://github.com/Dan-in-CA/ospi_plugins/wiki)
-- [Installing OSPi software (older docs)](http://rayshobby.net/mediawiki/index.php/Python_Interval_Program_for_OSPi)  
+- [Installing OSPi software (older docs)](http://rayshobby.net/mediawiki/index.php/Python_Interval_Program_for_OSPi)
 - Documentation for the User Interface (UI) - comming soon
