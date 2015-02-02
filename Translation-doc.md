@@ -4,4 +4,4 @@
 3. Save file (makes 2 files)
 4. Email files (ospi_messages.po & ospi_messages.mo) to dkimberling59@gmail.com
 
-Be sure to include iformation about language of translation and your email address.
+Be sure to include information about language of translation and your email address.
