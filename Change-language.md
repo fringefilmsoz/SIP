@@ -8,4 +8,4 @@ To change the language:
 3. Click **SUBMIT CHANGES** at the bottom of the page. You will be taken to the home page    
 4. Go back to the **OPTIONS** page and open the **System Restart** section, then select **RESTART**    
 
-After a few seconds the Home Page should appear in the chosen language
+After a few seconds the Home Page should appear in your chosen language
