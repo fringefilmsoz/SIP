@@ -15,13 +15,13 @@ A reverse proxy is useful if you want meet the following 3 requirements.
 * Use standard web traffic ports for all services (80,443)
 * Use a single SSL certificate for all services
 
-The last point is really the key. Most of the simpler options mention above would require you to purchase separate SSL certificates from a
+The last point is really the key. Most of the simpler options mentioned above would require you to purchase separate SSL certificates from a
 Central Authority (CA) such Verisign, Network Solutions, etc for each service you wish to host securely. The exception is hosting on another port. 
 You could use a single certificate for multiple ports, but you would need to configure your router to forward each new port to the correct internal IP. 
 
 You could also use self-signed certificates but you would receive browser security warnings and trying to use the mobile app would most likely not work.
 
-> Regardless of how you expose OSPi to the internet IF you do it is HIGHLY RECOMMENDED that you access OSPi over an secure SSL connection. 
+> Regardless of how you expose OSPi to the internet, iF you do it is HIGHLY RECOMMENDED that you access OSPi over an secure SSL connection. 
 
 ### Example setup
 
