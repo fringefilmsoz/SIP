@@ -1,5 +1,5 @@
 #Welcome to the SIP (OSPi) wiki!<br/>
-##Note: This software is being renamed to SIP
+##Note: This software project is being renamed to SIP
 #####Here you will find documentation for:
 
 - [User Interface (UI) Help](\Help)
