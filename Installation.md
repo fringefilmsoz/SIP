@@ -71,7 +71,7 @@ You should now see the SIP Login page in your browser. Enter the default passwor
 
 Once the program is installed, you will probably want it to start automatically when the Raspberry Pi boots up. This will ensure that the program will be running even after recovering from a power outage.
 
-There are a couple of ways to accomplish this. The simplest is to add some start-up commands to a file named “rc.local” which is in a directory named “/etc”. However, the recommended method is to use a script in /etc/init.d. See the **[Recommended method](##The-recommended-method)** below.
+There are a couple of ways to accomplish this. The simplest is to add some start-up commands to a file named “rc.local” which is in a directory named “/etc”. However, the recommended method is to use a script in /etc/init.d. See the **[Recommended method](##The-recommended-method:)** below.
 
 ### Quick instructions:
 
@@ -124,7 +124,7 @@ After the Pi has rebooted you should be able to go to the URL of your Pi from a 
 
 If you open a terminal window on the Pi, or access the Pi via ssh you will not see any indication that the program is running. It started as “root” and is not visible to the standard Pi user. You can use the Pi as if the program wasn't running but be aware that a lot of additional activity may cause timing problems with SIP.
 
-##The recommended method
+##The recommended method:
 
 #### Starting sip.py from a script in /etc/init.d
 
