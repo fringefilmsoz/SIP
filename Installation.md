@@ -124,7 +124,7 @@ After the Pi has rebooted you should be able to go to the URL of your Pi from a 
 
 If you open a terminal window on the Pi, or access the Pi via ssh you will not see any indication that the program is running. It started as “root” and is not visible to the standard Pi user. You can use the Pi as if the program wasn't running but be aware that a lot of additional activity may cause timing problems with SIP.
 
-##The recommended method
+#The recommended method
 
 #### Starting sip.py from a script in /etc/init.d
 
