@@ -69,9 +69,64 @@ You should now see the interval program's home page in your browser. Congratulat
 
 ## <span class="mw-headline" id="Starting_the_program_automatically">Starting the program automatically</span>
 
+
 Once the program is installed, you will probably want it to start automatically when the Raspberry Pi boots up. This will ensure that the program will be running even after recovering from a power outage.
 
-There are a couple of ways to accomplish this. The simplest is to add some start-up commands to a file named “rc.local” which is in a directory named “/etc”. However, the recommended method is to use a script in /etc/init.d. See the **[Recommended method](http://rayshobby.net/mediawiki/index.php/Python_Interval_Program_for_SIP#The_recommended_method: "Python Interval Program for SIP")** below.
+There are a couple of ways to accomplish this. The simplest is to add some start-up commands to a file named “rc.local” which is in a directory named “/etc”. However, the recommended method is to use a script in /etc/init.d.
+
+### <span class="mw-headline" id="The_recommended_method:">The recommended method:</span>
+
+#### <span class="mw-headline" id="Starting_sip.py_from_a_script_in_.2Fetc.2Finit.d">Starting sip.py from a script in /etc/init.d</span>
+
+Here's the best way to automatically start sip.py on boot instead of using /etc/rc.local. This is the preferred method and a file (sip.sh) is included with the program distribution to make setup easy.
+
+The advantage of using an /etc/init.d script is that you can easily stop, start, and check the status of sip.py. Since /etc/rc.local is only executed on boot up, it's a little awkward to stop sip.py and start it again without rebooting or a typing bunch of commands. The script was adapted from the Debian skeleton template in /etc/init.d.
+
+1.  Copy the script file to /etc/init.d and rename it to sip (without the .sh extension). Log into the SIP directory and run the command:
+
+    <pre>sudo cp sip.sh /etc/init.d/sip</pre>
+
+2.  Make the script executable:
+
+    <pre>sudo chmod +x /etc/init.d/sip</pre>
+
+3.  Activate auto start on boot:
+
+    <pre>sudo update-rc.d sip defaults</pre>
+
+4. Reboot the Pi:
+
+    <pre>sudo reboot</pre>
+
+After the Pi has rebooted you should be able to go to the URL of your Pi from a device connected to your local network and access the interval program's web interface.
+
+If you open a terminal window on the Pi, or access the Pi via ssh you will not see any indication that the program is running. It started as “root” and is not visible to the standard Pi user. You can use the Pi as if the program wasn't running but be aware that a lot of additional activity may cause timing problems with the interval program.
+
+If you want to disable the auto-start, use:
+
+<pre>sudo update-rc.d sip remove</pre>
+
+If you are developing new features in the code you will find the **restart** command (see below) a quick way to check your changes.
+
+#### <span class="mw-headline" id="Check_status.2C_start.2C_stop.2C_and_restart_sip.py">Check status, start, stop, and restart sip.py</span>
+
+If you are using the sip script in /etc/init.d, as described above, you can check if the interval program is running by executing the command:
+
+<pre>service sip status</pre>
+
+To start the interval program, execute:
+
+<pre>sudo service sip start</pre>
+
+To stop the interval program, execute:
+
+<pre>sudo service sip stop</pre>
+
+To quickly restart the program after making changes, execute:
+
+<pre>sudo service sip restart</pre>
+
+## using rc.local
 
 ### <span class="mw-headline" id="Quick_instructions:">Quick instructions:</span>
 
@@ -120,53 +175,6 @@ Nano is the name of a light weight text editor that is included with the Raspbia
 
     followed by the Enter key.
 
-After the Pi has rebooted you should be able to go to the URL of your Pi from a device connected to your local network and access the interval program's web interface.
-
-If you open a terminal window on the Pi, or access the Pi via ssh you will not see any indication that the program is running. It started as “root” and is not visible to the standard Pi user. You can use the Pi as if the program wasn't running but be aware that a lot of additional activity may cause timing problems with the interval program.
-
-### <span class="mw-headline" id="The_recommended_method:">The recommended method:</span>
-
-#### <span class="mw-headline" id="Starting_sip.py_from_a_script_in_.2Fetc.2Finit.d">Starting sip.py from a script in /etc/init.d</span>
-
-Here's a better way to automatically start sip.py on boot instead of using /etc/rc.local. This is the preferred method and a file (sip.sh) is included with the program distribution to make setup easy.
-
-The advantage of using an /etc/init.d script is that you can easily stop, start, and check the status of sip.py. Since /etc/rc.local is only executed on boot up, it's a little awkward to stop sip.py and start it again without rebooting or a typing bunch of commands. The script was adapted from the Debian skeleton template in /etc/init.d.
-
-1.  Move the script file to /etc/init.d and rename it to sip (without the .sh extension). Log into the SIP directory and run the command:
-
-    <pre>sudo mv sip.sh /etc/init.d/sip</pre>
-
-2.  Make the script executable:
-
-    <pre>sudo chmod +x /etc/init.d/sip</pre>
-
-3.  Activate auto start on boot:
-
-    <pre>sudo update-rc.d sip defaults</pre>
-
-If you want to disable the auto-start, use:
-
-<pre>sudo update-rc.d sip remove</pre>
-
-If you are developing new features in the code you will find the **restart** command (see below) a quick way to check your changes.
-
-#### <span class="mw-headline" id="Check_status.2C_start.2C_stop.2C_and_restart_sip.py">Check status, start, stop, and restart sip.py</span>
-
-If you are using the sip script in /etc/init.d, as described above, you can check if the interval program is running by executing the command:
-
-<pre>service sip status</pre>
-
-To start the interval program, execute:
-
-<pre>sudo service sip start</pre>
-
-To stop the interval program, execute:
-
-<pre>sudo service sip stop</pre>
-
-To quickly restart the program after making changes, execute:
-
-<pre>sudo service sip restart</pre>
 
 ## <span class="mw-headline" id="Logging">Logging</span>
 
@@ -180,7 +188,7 @@ Click the “Options” button at the top of the page. On the Options page click
 
 It is set to 100 records by default but you can change the value to whatever you like. When the maximum number of records has been reached, new records will continue to be added to the top of the list and the oldest records deleted from the bottom.
 
-Setting the maximum to zero (no maximum) will allow records to accumulate until all available storage space is filled. This may effect system performance if the number of records becomes very large but it has been tested with over 1100 records without a noticeable problem. A practical setting might be the number of records you would get in a period of time such as a week.
+Setting the maximum to zero (no maximum) will allow records to accumulate until all available storage space is filled. This may effect system performance if the number of records becomes very large but it has been tested with over 1100 records without a noticeable problem. A practical setting might be the number of records you would get in a period of time such as a week or a month.
 
 ### <span class="mw-headline" id="Archiving_log_data:">Archiving log data:</span>
 
