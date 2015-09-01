@@ -8,4 +8,4 @@
 - [Translating the web interface into your favorite language](\Translation-doc)
 - [Reverse Proxy Support](\Reverse-proxy)
 
-####To ask questions, report bugs, or make suggestions about this project plaease visit the [discussion forum](http://nosack.com/sipforum)
+####To ask questions, report bugs, or make suggestions about this project please visit the [discussion forum](http://nosack.com/sipforum)
