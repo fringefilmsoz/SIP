@@ -24,5 +24,5 @@ Each program overview includes:
 **Related information**  
 
 
-[Enable or Disable a program](../tasks/enable_disable_program.md)
+[Enable or Disable a program](\enable_disable_program.md)
 
