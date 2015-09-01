@@ -1,4 +1,4 @@
-# About the Home page {#home_page .concept}
+# About the Home page
 
 The Home page is the main control panel of the web interface. It includes:
 
