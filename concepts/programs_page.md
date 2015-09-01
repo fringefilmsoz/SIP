@@ -2,6 +2,8 @@
 
 Use the programs page to add, edit, view and control programs.
 
+![Image of Programs Page](https://github.com/Dan-in-CA/OSPi/wiki/images/programs_page.jpg)
+
 The Programs page includes:
 
 -   A button for adding a new irrigation program. See Adding a program
@@ -24,5 +26,5 @@ Each program overview includes:
 **Related information**  
 
 
-[Enable or Disable a program](\enable_disable_program.md)
+[Enable or Disable a program](\enable_disable_program)
 
