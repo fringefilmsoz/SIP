@@ -1,5 +1,5 @@
 #Welcome to the SIP documentation wiki!  
-####Note: This software project is now SIP (formally Python Interval Program for OSPi)
+####Note: This software project is now SIP (formerly Python Interval Program for OSPi)
 
 #####Here you will find documentation for:
 - [Installation and Set up](\Installation)
