@@ -2,7 +2,7 @@
 
 Use the programs page to add, edit, view and control programs.
 
-![Image of Programs Page](https://github.com/Dan-in-CA/OSPi/wiki/images/programs_page.jpg)
+![Image of programs page](https://github.com/Dan-in-CA/SIP/wiki/images/programs_page.jpg)
 
 The Programs page includes:
 
@@ -22,9 +22,4 @@ Each program overview includes:
     2.  A "Run Now" button to run the program Immediately
     3.  A button to edit the program
     4.  A button to delete the program
-
-**Related information**  
-
-
-[Enable or Disable a program](\enable_disable_program)
 

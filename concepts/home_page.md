@@ -1,8 +1,8 @@
 # About the Home page
 
-The Home page is the main control panel of the web interface. It includes:
+The Home page is the main control center of the web interface. It includes:
 
--   A clock showing the current time at the location of the controller.
+-   A clock showing the current time at the location of the controller. This also appears on all pages.
 -   A navigation bar at the top for moving between pages of the interface. This is also present on the other pages except the login page
 
 -   A set of buttons for making global changes to the behavior of the system including
@@ -14,8 +14,8 @@ The Home page is the main control panel of the web interface. It includes:
 
 -   A "Stop all Stations" button for immediate cancelation of a running irrigation program or station
 
--   A footer that is also present on the other pages except the login page. It includes:
-    1.  A Help button labeled "?" which opens a seperate browser tab with content from the project's Documentation Wiki.
-    2.  The Temperature of the Raspberry pi's CPU temperature. The displayed temperature can be tobbled between C and F.
+-   A footer that is present on all pages. The footer includes:
+    1.  A Help button labeled "?" which opens a seperate browser tab with content from the project's Documentation Wiki
+    2.  The Temperature of the Raspberry pi's CPU temperature. The displayed temperature can be toggled between C and F.
     3.  A link to the project's software repository and the revision number of the installed software
 
