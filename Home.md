@@ -3,7 +3,7 @@
 
 #####Here you will find documentation for:
 - [Installation and Set up](\Installation)
-- [User Interface (UI) Help](\_Sidebar)
+- Web Interface (UI) Help - See sidebar
 - [Installing OSPi software (older docs)](http://rayshobby.net/mediawiki/index.php/Python_Interval_Program_for_OSPi)
 - [Translating the web interface into your favorite language](\Translation-doc)
 - [Reverse Proxy Support](\Reverse-proxy)
