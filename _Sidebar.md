@@ -17,7 +17,7 @@
         -   [Set Water Scaling](\water_scaling)
     -   [Change password](\change_password)
     -   [Station Handling](\Station_handling)
-        -   [About Sequential versus Concurrent modes](\about_sequential)
+        -   [About Sequential and Concurrent modes](\about_sequential)
         -   [Sequential](\sequential)
         -   [Extension boards](\extension_boards)
         -   [Station delay](\station_delay)
