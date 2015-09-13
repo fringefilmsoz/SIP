@@ -1,3 +1,3 @@
 # SIP Web Interface
 
-[Change Language](https://github.com/Dan-in-CA/OSPi/wiki/Change-language)
+[Web Interface Help](https://github.com/Dan-in-CA/OSPi/wiki/_Sidebar)
