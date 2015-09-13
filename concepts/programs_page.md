@@ -2,7 +2,7 @@
 
 Use the programs page to add, edit, view and control programs.
 
-![Image of programs page](https://github.com/Dan-in-CA/SIP/wiki/images/programs_page.jpg)
+![](https://github.com/Dan-in-CA/SIP/wiki/images/programs_page.jpg)
 
 The Programs page includes:
 
