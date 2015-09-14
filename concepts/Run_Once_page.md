@@ -1,4 +1,4 @@
-# Abut the Run Once page
+# Run Once page
 
 The Run Once page presents a list of enabled stations with minute and seconds fields for each.
 

@@ -1,11 +1,11 @@
 # SIP Web Interface Guide
 
 -   [Logging in](\Logging_in)
--   [About the Home page](\home_page)
--   [About the Programs page](\programs_page)
+-   [Home page](\home_page)
+-   [Programs page](\programs_page)
     -   [Enable or Disable a Program](\enable_disable_program)
--   [Abut the Run Once page](\run_once_page)
--   [About the Options page](\options_page)
+-   [Run Once page](\run_once_page)
+-   [Options page](\options_page)
     -   [System Section](\system_section)
         -   [Show Tooltips](\show_tooltips)
         -   [Set System name](\set_system_name)

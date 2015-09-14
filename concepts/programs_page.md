@@ -1,4 +1,4 @@
-# About the Programs page
+# Programs page
 
 Use the programs page to add, edit, view and control programs.
 
