@@ -9,4 +9,4 @@ High quality SD cards use a tecnique called "wear leveling" to spread data write
 
 Another good strategy is to attach an add-on storage device such as a flash drive to the Pi and use that to hold frequently updated files.  
 
-See Use a flash drive with SIP for details on how to use s flash drive to hold SIP's configuration and log files.
+See [Use a flash drive with SIP](\flashdrive) details on how to use s flash drive to hold SIP's configuration and log files.
