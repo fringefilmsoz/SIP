@@ -64,3 +64,25 @@ Below is a sample NGINX configuration. Setting up NGINX and configuring it to fo
       }
     }
 ```
+
+### Reverse Proxy SSL Apache Example
+```Apache
+
+ProxyPass /sprinklers/ http://192.168.1.123:80/
+ProxyPassReverse /sprinklers/ http://192.168.1.123:80/
+
+<Location /sprinklers/>
+
+AuthType Basic
+AuthName "Restricted Area"
+AuthUserFile /etc/apache2/passwd/passwords
+
+Require user admin
+
+ProxyPassReverseCookieDomain 192.168.1.123 myexternalssldomain.org
+RequestHeader set X-SCRIPT-NAME /sprinklers
+RequestHeader set X-SCHEME https
+
+</Location>
+
+```
