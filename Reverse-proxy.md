@@ -82,6 +82,8 @@ Require user admin
 ProxyPassReverseCookieDomain 192.168.1.123 myexternalssldomain.org
 RequestHeader set X-SCRIPT-NAME /sprinklers
 RequestHeader set X-SCHEME https
+RequestHeader set X-Forwarded-Proto "https"
+
 
 </Location>
 
