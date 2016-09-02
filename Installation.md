@@ -63,7 +63,7 @@ sudo python sip.py</pre>
 
 On a device connected to your local network, enter the URL of your Raspberry Pi. For example, on my test system, the URL would be http://192.168.1.22. The URL of your Raspberry Pi will be different.
 
-You should now see the interval program's home page in your browser. Congratulations! The program is now installed and running.
+You should now see SIP's home page in your browser. Congratulations! The program is now installed and running.
 
 **Note:** If you start the program while logged in via SSH and then log out of SSH, the program will be stopped. If you then try to access the program from your browser you will get an error message.
 
@@ -98,9 +98,9 @@ The advantage of using an /etc/init.d script is that you can easily stop, start,
 
     <pre>sudo reboot</pre>
 
-After the Pi has rebooted you should be able to go to the URL of your Pi from a device connected to your local network and access the interval program's web interface.
+After the Pi has rebooted you should be able to go to the URL of your Pi from a device connected to your local network and access SIP's web interface.
 
-If you open a terminal window on the Pi, or access the Pi via ssh you will not see any indication that the program is running. It started as “root” and is not visible to the standard Pi user. You can use the Pi as if the program wasn't running but be aware that a lot of additional activity may cause timing problems with the interval program.
+If you open a terminal window on the Pi, or access the Pi via ssh you will not see any indication that the program is running. It started as “root” and is not visible to the standard Pi user. You can use the Pi as if the program wasn't running but be aware that a lot of additional activity may cause timing problems with SIP.
 
 If you want to disable the auto-start, use:
 
