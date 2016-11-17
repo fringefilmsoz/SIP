@@ -6,7 +6,7 @@ There are only a few inexpensive conponents needed:
 - 74HC595 Shift Registers
 - a few pin headers
 - some jumper wires
-- a 0.1 micro farad capacitor
+- a 0.1 microfarad capacitor
 - a bread board, perf board or other support
 
 you can get them from most electronics parts suppliers. for example Adafruit sells a 3 pack of [74HC595 chips](https://www.adafruit.com/products/450) for $2.75.
