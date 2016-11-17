@@ -10,5 +10,6 @@
 - [Extending the life of the SD Card](\SD-card-life)
 - [Using a Flash Drive With SIP](\flashdrive)
 - [SIP HTTP GET Command Reference (download PDF)](\SIP_GET_commands.pdf)
+- [A simple Relay Interface](\Relay-interface)
 
 ####To ask questions, report bugs, or make suggestions about this project please visit the [SIP discussion forum](http://nosack.com/sipforum)
