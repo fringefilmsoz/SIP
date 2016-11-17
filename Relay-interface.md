@@ -12,6 +12,7 @@ There are only a few inexpensive conponents needed:
 you can get them from most electronics parts suppliers. For example Adafruit sells a 3 pack of [74HC595 chips](https://www.adafruit.com/products/450) for $2.75.
 
 The diagram below shows a breadboard layout that supports up to 24 stations.
+
 ![shift register layout](images/SIP_shift_register_layout.jpg)
 
 Each 74HC595 shift register allows you to connect 8 relays. You can chain as many shift registers together as needed.
