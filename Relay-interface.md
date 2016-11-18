@@ -9,7 +9,7 @@ There are only a few inexpensive conponents needed:
 - a 0.1 microfarad capacitor
 - a bread board, perf board or other support
 
-you can get them from most electronics parts suppliers. For example Adafruit sells a 3 pack of [74HC595 chips](https://www.adafruit.com/products/450) for $2.75.
+You can get them from most electronics parts suppliers. For example Adafruit sells a 3 pack of [74HC595 chips](https://www.adafruit.com/products/450) for $2.75.
 
 The diagram below shows a breadboard layout that supports up to 24 stations.
 
