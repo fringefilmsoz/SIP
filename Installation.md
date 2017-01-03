@@ -176,7 +176,7 @@ Nano is the name of a light weight text editor that is included with the Raspbia
     followed by the Enter key.
 
 ## using systemd
-
+NOTE: This requires Raspbian Jessie or newer
 ### <span class="mw-headline" id="Quick_instructions:_3">Quick instructions:</span>
 
 1.  Create and edit the file /etc/systemd/system/SIP.service and add the following:
