@@ -175,6 +175,98 @@ Nano is the name of a light weight text editor that is included with the Raspbia
 
     followed by the Enter key.
 
+## using systemd
+NOTE: This requires Raspbian Jessie or newer
+### <span class="mw-headline" id="Quick_instructions:_3">Quick instructions:</span>
+
+1.  Create and edit the file /etc/systemd/system/SIP.service and add the following:
+
+    <pre>[Unit]
+    Description=SIP (sprinkler) Server
+	After=syslog.target network-online.target
+
+	[Service]
+	Type=simple
+	WorkingDirectory=/home/pi/SIP
+	ExecStart=/usr/bin/python /home/pi/SIP/sip.py
+	Restart=always
+	RestartSec=10
+	KillMode=process
+	StandardOutput=syslog
+	StandardError=syslog
+	SyslogIdentifier=SIP
+	User=root
+	Group=root
+
+	[Install]
+	WantedBy=multi-user.target
+	</pre>
+
+2.  Make sure the file is readable writeable and executable by root using the following command:
+	<pre>sudo chmod u+rwx /etc/systemd/system/SIP.service
+	</pre>
+	
+3.  Now enable and start the service:
+	<pre>sudo systemctl daemon-reload
+	sudo systemctl enable SIP
+	sudo systemctl start SIP</pre>
+	
+4.  Reboot the Pi.
+
+    <pre>sudo reboot</pre>
+
+### <span class="mw-headline" id="Detailed_instructions:_3">Detailed instructions:</span>
+
+1.  In a terminal window type the following command:
+
+    <pre>sudo nano /etc/systemd/system/SIP.service</pre>
+
+    followed by the enter key.
+
+    This will open the file in the editor.
+
+    You can use the keyboard arrow keys to move around and the Enter key to add new lines in the editor.
+
+2.  Carefully type in the following:
+
+    <pre>[Unit]
+    Description=SIP (sprinkler) Server
+	After=syslog.target network-online.target
+
+	[Service]
+	Type=simple
+	WorkingDirectory=/home/pi/SIP
+	ExecStart=/usr/bin/python /home/pi/SIP/sip.py
+	Restart=always
+	RestartSec=10
+	KillMode=process
+	StandardOutput=syslog
+	StandardError=syslog
+	SyslogIdentifier=SIP
+	User=root
+	Group=root
+
+	[Install]
+	WantedBy=multi-user.target
+	</pre>
+
+    Be sure to include all spaces and punctuation just as shown above.
+
+3.  After you have entered the lines as shown above, save the file by typing <tt>Ctrl + o</tt>. (that's the control key and the letter o together) followed by the Enter key.
+4.  Exit the editor by typing <tt>Ctrl + x</tt>.
+5.  Make sure the file is readable writeable and executable by root using the following command followed by the Enter key:
+	<pre>sudo chmod u+rwx /etc/systemd/system/SIP.service
+	</pre>
+6.	Now enable and start the service by typing the following commands each followed by the Enter key:
+	<pre>sudo systemctl daemon-reload
+	sudo systemctl enable SIP
+	sudo systemctl start SIP</pre>
+5.  Lastly reboot the Pi by typing:
+
+    <pre>sudo reboot</pre>
+
+    followed by the Enter key.
+
 
 ## <span class="mw-headline" id="Logging">Logging</span>
 
@@ -193,4 +285,3 @@ Setting the maximum to zero (no maximum) will allow records to accumulate until 
 ### <span class="mw-headline" id="Archiving_log_data:">Archiving log data:</span>
 
 The Log page contains a link that allows you to download log data as a spread sheet friendly, comma separated values, (csv) text file to another device, e. g. a laptop. This provides a means of keeping a permanent archive of irrigation data in manageable size chunks. Once the file has been downloaded it can be imported in to your favorite spread sheet program for viewing, sorting, etc.
-
