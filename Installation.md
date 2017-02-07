@@ -72,29 +72,25 @@ You should now see SIP's home page in your browser. Congratulations! The program
 
 Once the program is installed, you will probably want it to start automatically when the Raspberry Pi boots up. This will ensure that the program will be running even after recovering from a power outage.
 
-There are a couple of ways to accomplish this. The simplest is to add some start-up commands to a file named “rc.local” which is in a directory named “/etc”. However, the recommended method is to use a script in /etc/init.d.
+There are a couple of ways to accomplish this. The simplest is to add some start-up commands to a file named “rc.local” which is in a directory named “/etc”. However, the recommended method for recent versions of Raspbian (jessie) is to use a script in /etc/systemd.
 
 ### <span class="mw-headline" id="The_recommended_method:">The recommended method:</span>
 
-#### <span class="mw-headline" id="Starting_sip.py_from_a_script_in_.2Fetc.2Finit.d">Starting sip.py from a script in /etc/init.d</span>
+#### <span class="mw-headline" id="Starting_sip.py_from_a_script_in_.2Fetc.2Fsystemd">Starting sip.py from a script in /etc/systemd</span>
 
-Here's the best way to automatically start sip.py on boot instead of using /etc/rc.local. This is the preferred method and a file (sip.sh) is included with the program distribution to make setup easy.
+Here's the best way to automatically start sip.py on boot instead of using /etc/rc.local. This is the preferred method and a file (sip.service) is included with the program distribution to make setup easy.
 
-The advantage of using an /etc/init.d script is that you can easily stop, start, and check the status of sip.py. Since /etc/rc.local is only executed on boot up, it's a little awkward to stop sip.py and start it again without rebooting or a typing bunch of commands. The script was adapted from the Debian skeleton template in /etc/init.d.
+The advantage of using a systemd script is that you can easily stop, start, and check the status of sip.py. Since /etc/rc.local is only executed on boot up, it's a little awkward to stop sip.py and start it again without rebooting or a typing bunch of commands.
 
-1.  Copy the script file to /etc/init.d and rename it to sip (without the .sh extension). Log into the SIP directory and run the command:
+1.  Copy the script file to /etc/systemd/system. Run the command:
 
-    <pre>sudo cp sip.sh /etc/init.d/sip</pre>
+    <pre>sudo cp /SIP/sip.service /etc/systemd/system/</pre>
 
-2.  Make the script executable:
+2.  Enable sip service:
 
-    <pre>sudo chmod +x /etc/init.d/sip</pre>
+    <pre>sudo systemctl enable sip.service</pre>
 
-3.  Activate auto start on boot:
-
-    <pre>sudo update-rc.d sip defaults</pre>
-
-4. Reboot the Pi:
+3. Reboot the Pi:
 
     <pre>sudo reboot</pre>
 
@@ -104,27 +100,27 @@ If you open a terminal window on the Pi, or access the Pi via ssh you will not s
 
 If you want to disable the auto-start, use:
 
-<pre>sudo update-rc.d sip remove</pre>
+<pre>sudo systemctl disable sip.service</pre>
 
 If you are developing new features in the code you will find the **restart** command (see below) a quick way to check your changes.
 
 #### <span class="mw-headline" id="Check_status.2C_start.2C_stop.2C_and_restart_sip.py">Check status, start, stop, and restart sip.py</span>
 
-If you are using the sip script in /etc/init.d, as described above, you can check if the interval program is running by executing the command:
+If you are using the sip.service script , as described above, you can check if sip is running by executing the command:
 
-<pre>service sip status</pre>
+<pre>systemctl status sip</pre>
 
-To start the interval program, execute:
+To start sip, execute:
 
-<pre>sudo service sip start</pre>
+<pre>sudo systemctl start sip</pre>
 
-To stop the interval program, execute:
+To stop sip, execute:
 
-<pre>sudo service sip stop</pre>
+<pre>sudo systemctl stop sip</pre>
 
 To quickly restart the program after making changes, execute:
 
-<pre>sudo service sip restart</pre>
+<pre>sudo systemctl restart sip</pre>
 
 ## using rc.local
 
@@ -142,7 +138,7 @@ To quickly restart the program after making changes, execute:
 
 ### <span class="mw-headline" id="Detailed_instructions:_2">Detailed instructions:</span>
 
-Nano is the name of a light weight text editor that is included with the Raspbian operating system. It is used to edit various configuration files including the rc.local file that can be used to start the Python interval program when the Pi boots up.
+Nano is the name of a light weight text editor that is included with the Raspbian operating system. It is used to edit various configuration files including the rc.local file that can be used to start sip when the Pi boots up.
 
 1.  In a terminal window type the following command:
 
@@ -174,99 +170,6 @@ Nano is the name of a light weight text editor that is included with the Raspbia
     <pre>sudo reboot</pre>
 
     followed by the Enter key.
-
-## using systemd
-NOTE: This requires Raspbian Jessie or newer
-### <span class="mw-headline" id="Quick_instructions:_3">Quick instructions:</span>
-
-1.  Create and edit the file /etc/systemd/system/SIP.service and add the following:
-
-    <pre>[Unit]
-    Description=SIP (sprinkler) Server
-	After=syslog.target network-online.target
-
-	[Service]
-	Type=simple
-	WorkingDirectory=/home/pi/SIP
-	ExecStart=/usr/bin/python /home/pi/SIP/sip.py
-	Restart=always
-	RestartSec=10
-	KillMode=process
-	StandardOutput=syslog
-	StandardError=syslog
-	SyslogIdentifier=SIP
-	User=root
-	Group=root
-
-	[Install]
-	WantedBy=multi-user.target
-	</pre>
-
-2.  Make sure the file is readable writeable and executable by root using the following command:
-	<pre>sudo chmod u+rwx /etc/systemd/system/SIP.service
-	</pre>
-	
-3.  Now enable and start the service:
-	<pre>sudo systemctl daemon-reload
-	sudo systemctl enable SIP
-	sudo systemctl start SIP</pre>
-	
-4.  Reboot the Pi.
-
-    <pre>sudo reboot</pre>
-
-### <span class="mw-headline" id="Detailed_instructions:_3">Detailed instructions:</span>
-
-1.  In a terminal window type the following command:
-
-    <pre>sudo nano /etc/systemd/system/SIP.service</pre>
-
-    followed by the enter key.
-
-    This will open the file in the editor.
-
-    You can use the keyboard arrow keys to move around and the Enter key to add new lines in the editor.
-
-2.  Carefully type in the following:
-
-    <pre>[Unit]
-    Description=SIP (sprinkler) Server
-	After=syslog.target network-online.target
-
-	[Service]
-	Type=simple
-	WorkingDirectory=/home/pi/SIP
-	ExecStart=/usr/bin/python /home/pi/SIP/sip.py
-	Restart=always
-	RestartSec=10
-	KillMode=process
-	StandardOutput=syslog
-	StandardError=syslog
-	SyslogIdentifier=SIP
-	User=root
-	Group=root
-
-	[Install]
-	WantedBy=multi-user.target
-	</pre>
-
-    Be sure to include all spaces and punctuation just as shown above.
-
-3.  After you have entered the lines as shown above, save the file by typing <tt>Ctrl + o</tt>. (that's the control key and the letter o together) followed by the Enter key.
-4.  Exit the editor by typing <tt>Ctrl + x</tt>.
-5.  Make sure the file is readable writeable and executable by root using the following command followed by the Enter key:
-	<pre>sudo chmod u+rwx /etc/systemd/system/SIP.service
-	</pre>
-6.	Now enable and start the service by typing the following commands each followed by the Enter key:
-	<pre>sudo systemctl daemon-reload
-	sudo systemctl enable SIP
-	sudo systemctl start SIP</pre>
-5.  Lastly reboot the Pi by typing:
-
-    <pre>sudo reboot</pre>
-
-    followed by the Enter key.
-
 
 ## <span class="mw-headline" id="Logging">Logging</span>
 
