@@ -61,6 +61,7 @@ Below is a sample NGINX configuration. Setting up NGINX and configuring it to fo
         proxy_set_header X-Forwarded-Proto $scheme;
         proxy_set_header X-Scheme $scheme;
         proxy_set_header X-Script-Name /ospi;
+        rewrite /ospi/(.*) /$1 break;
       }
     }
 ```
