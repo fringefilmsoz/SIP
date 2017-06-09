@@ -2,7 +2,7 @@
 
 If you don't mind a little soldering you can build this simple but reliable circuit to connect 5V relay boards to your Raspberry Pi. This works with SIP without any software modifications. The interface uses only 4 GPIO pins (plus one for power and one for ground) allowing you to connect other devices to your Pi.
 
-Note: The easiest way to use this setup is with an active high (high level trigger) relay board.
+**Note:** The best way to use this setup is with an active high (high level trigger) relay board.
 
 There are only a few inexpensive conponents needed:
 - 74HC595 Shift Registers
