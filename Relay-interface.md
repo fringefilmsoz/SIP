@@ -2,13 +2,14 @@
 
 If you don't mind a little soldering you can build this simple but reliable circuit to connect 5V relay boards to your Raspberry Pi. This works with SIP without any software modifications. The interface uses only 4 GPIO pins (plus one for power and one for ground) allowing you to connect other devices to your Pi.
 
+Note: The easiest way to use this setup is with an active high (high level trigger) relay board.
+
 There are only a few inexpensive conponents needed:
 - 74HC595 Shift Registers
 - a few pin headers
 - some jumper wires
 - a 0.1 microfarad capacitor
 - a bread board, perf board or other support
-- Optional: 2N222A transistor and 220 Ohm resistor
 
 You can get them from most electronics parts suppliers. For example Adafruit sells a 3 pack of [74HC595 chips](https://www.adafruit.com/products/450) for $2.75.
 
@@ -18,7 +19,7 @@ The diagram below shows a breadboard layout that supports up to 24 stations.
 
 Each 74HC595 shift register allows you to connect 8 relays. You can chain as many shift registers together as needed.
 
-If you will be using an active-low relay board such as SainSmart you should include the optional transistor. This prevents the relays from being all switched on during system power up. You should also check **Active_Low Relays** under **Station Handling** on SIP's **Options** page.
+If you will be using an active-low relay board such as SainSmart you should check **Active_Low Relays** under **Station Handling** on SIP's **Options** page.
 
 If you will be using a large number of stations, especially if more that a couple of relays will be on at the same time, you should consider adding a separate power supply to run the relays.
 
