@@ -19,13 +19,11 @@ The diagram below shows a breadboard layout that supports up to 24 stations.
 
 Each 74HC595 shift register allows you to connect 8 relays. You can chain as many shift registers together as needed.
 
-**Note:** This shift register interface can work with either active high (high level trigger) or active low (low level trigger) relay boards. SIP's native mode was designed for active high output. If you will be using **active low** relay boards such as those from SainSmart you will need to include the 10k Ohm pull up resistor between the output enable pin (Pin 11) and 5V as sown in the diagram above. This prevents the relays from being all switched on during power up.
+**Note:** This shift register interface can work with either active high (high level trigger) or active low (low level trigger) relay boards. If you are using an **active-low** relay board such as those from SainSmart you will need to check the **Active_Low Relay** box under **Station Handling** on SIP's **Options** page. This enables the proper output mode for active low boards.
 
-If you will be using **active high** relay boards **do not** include the resistor.
+If you need to increase the number of stations that SIP displays you can do so by increasing the number of **Extension boards** also under **Station Handling**. 0 for 8 stations (the default), 1 for 16 station 2 for 24 stations etc.
 
 Be sure that all relay boards attached to this interface are of the same trigger type.
-
-If you are using an **active-low** relay board you will also need to check the **Active_Low Relay** box under **Station Handling** on SIP's **Options** page. This enables the proper output mode for active low boards.
 
 If you will be using a large number of stations, especially if more that a couple of relays will be on at the same time, you should consider adding a separate power supply to run the relays.
 
