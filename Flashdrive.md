@@ -1,7 +1,7 @@
 # Use a flash drive with SIP
 Flash drives are relatively inexpensive and can be easily replaced.  
 
-Keeping frequently modified data such as configuration and log files on a flash attached to your Pi drive will not only extend the life of the Pi's SD memory card, but if you ever need to re-install SIP or copy your settings to another Pi the flash drive will contain all your settings. You can even copy, view, and edit the files on the flash drive using a Windows or Mac system.  
+Keeping frequently modified data such as configuration and log files on a flash attached to your Pi will not only extend the life of the Pi's SD memory card, but if you ever need to re-install SIP or copy your settings to another Pi the flash drive will contain all your settings. You can even copy, view, and edit the files on the flash drive using a Windows or Mac system.  
 
 ### Moving config and log files to a USB Flash drive  
 
