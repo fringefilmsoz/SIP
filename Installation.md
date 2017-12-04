@@ -84,7 +84,7 @@ The advantage of using a systemd script is that you can easily stop, start, and 
 
 1.  Copy the script file to /etc/systemd/system. Run the command:
 
-    <pre>sudo cp /SIP/sip.service /etc/systemd/system/</pre>
+    <pre>sudo cp SIP/sip.service /etc/systemd/system/</pre>
 
 2.  Enable sip service:
 
