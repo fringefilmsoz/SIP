@@ -20,7 +20,7 @@ It was decided to keep Odroid-C2 specific code separately from main code (branch
 
 Then proceed setup as in original wiki page.
 
-**Note:** default systemd startup script will not work if you install SIP under root user. You have to fix it manually (edit file and change paths), or add pi user and install SIP under pi user to /home/pi/SIP/ folder.
+**Note:** default systemd startup script will not work if you install SIP under root user. You have to fix it manually (edit file sip.service, change paths)
 
 # Relay board plugin setup
 
