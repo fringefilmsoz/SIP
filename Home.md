@@ -11,5 +11,6 @@
 - [Using a Flash Drive With SIP](flashdrive)
 - [SIP HTTP GET Command Reference (PDF download)](SIP_GET_commands.pdf)
 - [A simple DIY Relay Interface](Relay-interface)
+- [Installing SIP on Odroid-C2](Installation-(Odroid-C2))
 
 #### To ask questions, report bugs, or make suggestions about this project please visit the [SIP discussion forum](http://nosack.com/sipforum)
