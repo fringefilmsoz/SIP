@@ -1,14 +1,14 @@
 ### Reverse Proxy Support
 
-Most people probably have OSPi exposed only on their internal network at something like http://xxx.xxx.xxx.xxx/ where xxx.xxx.xxx.xxx 
+Most people probably have SIP exposed only on their internal network at something like http://xxx.xxx.xxx.xxx/ where xxx.xxx.xxx.xxx 
 is an internal ip address issued by your home router. A reverse proxy is a web server that sits between a service on an
-internal network (such as OSPi) and the open Internet. It allows you to host OSPi at a sub-path of a fully qualified domain name, or FQDN,
-such as https://mydomain.com/some/path/to/OSPi. 
+internal network (such as SIP) and the open Internet. It allows you to host SIP at a sub-path of a fully qualified domain name, or FQDN,
+such as https://mydomain.com/some/path/to/SIP. 
 
 ### Why a Reverse Proxy?
 
-There are several simpler alternatives to a reverse proxy if you would like to expose your OSPi to the Internet. Alternatives include hosting
-at the root domain (e.g. https://mydomain.com ), at a subdomain (e.g. https://ospi.mydomain.com) or on another port (e.g. https://mydomain.com:8080).
+There are several simpler alternatives to a reverse proxy if you would like to expose your SIP to the Internet. Alternatives include hosting
+at the root domain (e.g. https://mydomain.com ), at a subdomain (e.g. https://sip.mydomain.com) or on another port (e.g. https://mydomain.com:8080).
 A reverse proxy is useful if you want meet the following 3 requirements.
 
 * Host multiple web-based services from a single FQDN. (http://mydomain.com/ospi and https://mydomain.com/otherservice)
@@ -21,7 +21,7 @@ You could use a single certificate for multiple ports, but you would need to con
 
 You could also use self-signed certificates but you would receive browser security warnings and trying to use the mobile app would most likely not work.
 
-> Regardless of how you expose OSPi to the internet, iF you do it is HIGHLY RECOMMENDED that you access OSPi over an secure SSL connection. 
+> Regardless of how you expose SIP to the internet, iF you do it is HIGHLY RECOMMENDED that you access SIP over an secure SSL connection. 
 
 ### Example setup
 
@@ -38,7 +38,7 @@ Below is a sample NGINX configuration. Setting up NGINX and configuring it to fo
       return 301 https://mydomain.com$request_uri;
     }
     
-    #This section sets up the ssl connection and the routing from the internet to OSPi
+    #This section sets up the ssl connection and the routing from the internet to SIP
     server {
       listen			443 ssl;
       client_max_body_size    300M;
@@ -50,18 +50,18 @@ Below is a sample NGINX configuration. Setting up NGINX and configuring it to fo
 
       access_log  /usr/local/var/log/nginx/access.log upstreamlog;
    
-      # sets up the sub-path to ospi (i.e. https://mydomain.com/ospi/)  by setting the location '/ospi/'
-      # removing SSL (since OSPi isn't configured for it), and
-      # adds information to the request that OPSi used to construct the correct links
-      # in the OSPi application (i.e. https://mydomain/ospi/page.html instead of http://xxx.xxx.xxx.xxx:8080/page.html)
-      location /ospi/ {
-        proxy_pass http://xxx.xxx.xxx.xxx:8080/; #internal network location of your OSPi
+      # sets up the sub-path to SIP (i.e. https://mydomain.com/ospi/)  by setting the location '/sip/'
+      # removing SSL (since SIP isn't configured for it), and
+      # adds information to the request that SIP used to construct the correct links
+      # in the SIP application (i.e. https://mydomain/sip/page.html instead of http://xxx.xxx.xxx.xxx:8080/page.html)
+      location /sip/ {
+        proxy_pass http://xxx.xxx.xxx.xxx:8080/; #internal network location of your SIP
         proxy_set_header Host $host;
         proxy_set_header X-Forwarded-For $proxy_add_x_forwarded_for;
         proxy_set_header X-Forwarded-Proto $scheme;
         proxy_set_header X-Scheme $scheme;
-        proxy_set_header X-Script-Name /ospi;
-        rewrite /ospi/(.*) /$1 break;
+        proxy_set_header X-Script-Name /sip;
+        rewrite /sip/(.*) /$1 break;
       }
     }
 ```
