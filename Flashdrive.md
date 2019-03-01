@@ -19,9 +19,9 @@ To make a mount point named “flashdrive” at /media/flashdrive . Issue the co
 You can name the new mount point anything you like but be sure to substitute the name you give it in the following steps.  
 
 #### Mount the Storage device at Boot: 
-Find the ID of the storage device you will be using. Before you plug in the flash drive, on the Pi’s command line type `df –h` . This will give you a listing of the memory usage on the Pi.
+Find the ID of the storage device you will be using. Before you plug in the flash drive, on the Pi’s command line type `lsblk` . This will give you a listing of the memory usage on the Pi.
 
-Plug in the flash drive, wait a couple of seconds, then issue the `df –h` command again. You should now see the added device with its ID as something like “/dev/sda1”.
+Plug in the flash drive, wait a couple of seconds, then issue the `lsblk` command again. You should now see the added device with its ID as something like “/dev/sda1”.
 
 Add the flash drive to the file system table (fstab) with the following commands:  
 `sudo nano /etc/fstab`
@@ -34,7 +34,7 @@ Where “sda1” is the ID of the storage device and “flashdrive” is the nam
 Save the file and exit the editor.
 
 Mount the drive (it will happen automatically from /etc/fstab on subsequent boots):  
-`mount -a`
+`sudo mount -a`
 
 The next time your Pi is booted up with the storage device plugged in you should see it in the “df –h” listing and you can use it just like any other directory on the system. 
 
