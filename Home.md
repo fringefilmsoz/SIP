@@ -11,5 +11,5 @@
 - [A simple DIY Relay Interface](Relay-interface)
 - [Installing SIP on Odroid-C2](Installation-(Odroid-C2))
 
-#### To ask questions, report bugs, or make suggestions about this project open a GitHub issue or pull request.\
+#### To ask questions, report bugs, or make suggestions about this project open a GitHub issue or pull request.
 Also visit the [SIP discussion forum](http://nosack.com/sipforum)
