@@ -17,7 +17,7 @@ Each program overview includes:
     - The stations that are included
     - Start time and duration
    - If the program is recurring within a day, the interval and cut off time
--   Program controls \(buttons\):
+-   Program controls:
     - A button to turn the program on or off \(enable or disable\)
     - A "Run Now" button to run the program Immediately
     - A button to edit the program
