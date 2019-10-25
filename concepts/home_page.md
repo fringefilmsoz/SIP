@@ -16,6 +16,6 @@ The Home page is the main control center of the web interface. It includes:
 
 -   A footer that is present on all pages. The footer includes:
     1.  A Help button labeled "?" which opens a separate browser tab with content from the project's Documentation Wiki
-    2.  The Temperature of the Raspberry pi's CPU temperature. The displayed temperature can be toggled between C and F.
+    2.  The Temperature of the Raspberry pi's CPU. The displayed temperature can be toggled between C and F by clicking the temperature shown.
     3.  A link to the project's software repository and the revision number of the installed software
 
