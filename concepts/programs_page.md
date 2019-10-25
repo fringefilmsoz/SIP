@@ -13,13 +13,13 @@ The Programs page includes:
 Each program overview includes:
 
 -   Program information:
-    1.  The program number and the days it is scheduled to run
-    2.  The stations that are included
-    3.  Start time and duration
-    4.  If the program is recurring within a day, the interval and cut off time
+    - The program number and the days it is scheduled to run
+    - The stations that are included
+    - Start time and duration
+   - If the program is recurring within a day, the interval and cut off time
 -   Program controls \(buttons\):
-    1.  A button to turn the program on or off \(enable or disable\)
-    2.  A "Run Now" button to run the program Immediately
-    3.  A button to edit the program
-    4.  A button to delete the program
+    - A button to turn the program on or off \(enable or disable\)
+    - A "Run Now" button to run the program Immediately
+    - A button to edit the program
+    - A button to delete the program
 
