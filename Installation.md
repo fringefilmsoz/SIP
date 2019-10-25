@@ -7,7 +7,7 @@
 
 ### <span class="mw-headline" id="Install_git:">Install git:</span>
 
-**Note:** If you are running a resent full version of the Raspbian operating system, git should already be installed. You can test this by typing 'git' (without quotes) in a terminal window. If git is installed you will see a help screen showing git commands. If you are running the lite version of Raspbian Jessie or if git does not appear to be installed follow these instructions.
+**Note:** If you are running a resent full version of the Raspbian operating system, git should already be installed. You can test this by typing 'git' (without quotes) in a terminal window. If git is installed you will see a help screen showing git commands. If you are running Raspbian Lite or if git does not appear to be installed follow these instructions.
 
 With the Raspberry Pi connected to the internet, open a terminal window (command line). enter the following command:
 
