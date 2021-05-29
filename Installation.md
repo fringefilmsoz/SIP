@@ -78,13 +78,14 @@ There are a couple of ways to accomplish this. The simplest is to add some start
 
 #### <span class="mw-headline" id="Starting_sip.py_from_a_script_in_.2Fetc.2Fsystemd">Starting sip.py from a script in /etc/systemd</span>
 
-Here's the best way to automatically start sip.py on boot instead of using /etc/rc.local. This is the preferred method and a file (sip.service) is included with the program distribution to make setup easy.
+Here's the best way to automatically start SIP on boot instead of using /etc/rc.local. This is the preferred method and two files (sip.service and sip3.service) are included with the program distribution to make setup easy.
 
-The advantage of using a systemd script is that you can easily stop, start, and check the status of sip.py. Since /etc/rc.local is only executed on boot up, it's a little awkward to stop sip.py and start it again without rebooting or a typing bunch of commands.
+The advantage of using a systemd script is that you can easily stop, start, and check the status of SIP. Since /etc/rc.local is only executed on boot up, it's a little awkward to stop sip.py and start it again without rebooting or a typing bunch of commands.
 
-1.  Copy the script file to /etc/systemd/system.  
+1.  Copy one of the script files to /etc/systemd/system.  
+
 	To Run SIP under Python 2  
-	Rrun the command:  
+	Run the command:  
 
     <pre>sudo cp SIP/sip.service /etc/systemd/system/</pre>
     
@@ -96,6 +97,8 @@ The advantage of using a systemd script is that you can easily stop, start, and 
     For Python 3 you will also need to install the Python 3 version of  RPi.GPIO:
     
     <pre>sudo apt install python3-rpi.gpio</pre>
+    
+    **If this is not installed SIP will run but no stations will be activated under Python 3.**
 
 2.  Enable sip service:  
 	For Python 2:
@@ -127,7 +130,7 @@ If you are developing new features in the code you will find the **restart** com
 
 #### <span class="mw-headline" id="Check_status.2C_start.2C_stop.2C_and_restart_sip.py">Check status, start, stop, and restart sip.py</span>
 
-**Note:** if you are running SIP under Python 3 use sip3 in the following commands.  
+**Note:** if you are running SIP under Python 3 use **sip3** in the following commands.  
  
 You can check if sip is running by executing the command:
 
