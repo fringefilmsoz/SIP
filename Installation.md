@@ -82,13 +82,29 @@ Here's the best way to automatically start sip.py on boot instead of using /etc/
 
 The advantage of using a systemd script is that you can easily stop, start, and check the status of sip.py. Since /etc/rc.local is only executed on boot up, it's a little awkward to stop sip.py and start it again without rebooting or a typing bunch of commands.
 
-1.  Copy the script file to /etc/systemd/system. Run the command:
+1.  Copy the script file to /etc/systemd/system.  
+	To Run SIP under Python 2  
+	Rrun the command:  
 
     <pre>sudo cp SIP/sip.service /etc/systemd/system/</pre>
+    
+    To run SIP under Python 3  
+    Run the command:
+    
+    <pre>sudo cp SIP/sip3.service /etc/systemd/system/</pre>
+    
+    For Python 3 you will also need to install the Python 3 version of  RPi.GPIO:
+    
+    <pre>sudo apt install python3-rpi.gpio</pre>
 
-2.  Enable sip service:
+2.  Enable sip service:  
+	For Python 2:
 
     <pre>sudo systemctl enable sip.service</pre>
+    
+    For Python 3:
+    
+    <pre>sudo systemctl enable sip3.service</pre>
 
 3. Reboot the Pi:
 
@@ -98,15 +114,22 @@ After the Pi has rebooted you should be able to go to the URL of your Pi from a 
 
 If you open a terminal window on the Pi, or access the Pi via ssh you will not see any indication that the program is running. It started as “root” and is not visible to the standard Pi user. You can use the Pi as if the program wasn't running but be aware that a lot of additional activity may cause timing problems with SIP.
 
-If you want to disable the auto-start, use:
+If you want to disable the auto-start, use:  
+For Python 2
 
 <pre>sudo systemctl disable sip.service</pre>
+
+For Python 3
+
+<pre>sudo systemctl disable sip3.service</pre>
 
 If you are developing new features in the code you will find the **restart** command (see below) a quick way to check your changes.
 
 #### <span class="mw-headline" id="Check_status.2C_start.2C_stop.2C_and_restart_sip.py">Check status, start, stop, and restart sip.py</span>
 
-If you are using the sip.service script , as described above, you can check if sip is running by executing the command:
+**Note:** if you are running SIP under Python 3 use sip3 in the following commands.  
+ 
+You can check if sip is running by executing the command:
 
 <pre>systemctl status sip</pre>
 
