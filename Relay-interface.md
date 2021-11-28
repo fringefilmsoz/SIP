@@ -4,14 +4,10 @@
 
 ## There is a new, easier port expader plugin
 
-### Astro Gerard has contributed an excellent plugin that allows for a large number is stations to be easily and inexpensively added to SIP.
+### Astrogerard has contributed an excellent plugin that allows for a large number is stations to be easily and inexpensively added to SIP.
 
 ### It is called "pcf857x_plugin" and is available from the SIP plugins repo through SIP's plugin manager page. It uses i2c and requires SIP to be running under Python 3.
-
-### Gerard is keen to receive user feedback on his plugin so please post here with any comments.
-
 ***
-
 
 If you don't mind a little soldering you can build this simple but reliable circuit to connect 5V relay boards to your Raspberry Pi. This works with SIP without any software modifications. The interface uses only 4 GPIO pins (plus one for power and one for ground) allowing you to connect other devices to your Pi.
 
