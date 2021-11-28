@@ -4,7 +4,7 @@
 
 ### Astro Gerard has contributed an excellent plugin that allows for a large number is stations to be easily and inexpensively added to SIP.
 
-### It is called "pcf857x_plugin" and is available from the SIP plugins repo through SIP's plugin manager page. It used i2c and requires SIP to be running under Python 3.
+### It is called "pcf857x_plugin" and is available from the SIP plugins repo through SIP's plugin manager page. It uses i2c and requires SIP to be running under Python 3.
 
 ### Gerard is keen to receive user feedback on his plugin so please post here with any comments.
 
