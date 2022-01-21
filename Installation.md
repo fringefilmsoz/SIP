@@ -53,7 +53,7 @@ sudo python3 sip.py</pre>
     followed by the enter key.
 2.  start the program by typing the following command:
 
-    <pre>sudo python sip.py</pre>
+    <pre>sudo python3 sip.py</pre>
 
     followed by the enter key.
 
