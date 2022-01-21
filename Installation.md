@@ -26,7 +26,7 @@ Be sure you are in the Pi user's home directory (pi@raspberrypi ~ $).
 The program is now installed and ready to run. To start the program execute:
 
 <pre>cd SIP
-sudo python sip.py</pre>
+sudo python3 sip.py</pre>
 
 ### <span class="mw-headline" id="Detailed_instructions:">Detailed instructions:</span>
 
