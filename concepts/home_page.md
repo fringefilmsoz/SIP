@@ -1,4 +1,4 @@
-# Home page
+# About the Home page
 
 The Home page is the main control center of the web interface. It includes:
 
