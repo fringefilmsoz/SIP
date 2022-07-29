@@ -18,6 +18,6 @@ Logging in to SIP with a passphrase can help protect your SIP settings from acci
 
     The default passphrase is **opendoor**.
 
-    Wen you log in with a passphrase you begin a session. The session remains active as long as sip is open in the browser.
+    When you log in with a passphrase you begin a session. The session remains active as long as sip is open in the browser.
 
     If you close SIP's browser tab without logging out, you can re-open SIP with the same browser without the passphrase for a period of 24 hours. After 24 hours the session will expire and you will need to use your passphrase to log in again.
