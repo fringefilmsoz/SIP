@@ -1,6 +1,6 @@
-# Home page
+# About the Home page
 
-The Home page is the main control center of the web interface. It includes:
+The Home page is the main control center of SIP's web interface. It includes:
 
 -   A clock showing the current time and date at the location of the controller. This also appears on all pages.
 -   A navigation bar at the top for moving between pages of the interface. This is also present on the other pages except the optional login page.
@@ -12,11 +12,8 @@ The Home page is the main control center of the web interface. It includes:
     -   ![](./images/system.png) for controlling the overall operation of the software.
     -   ![](./images/water-level.png) allows setting the "water Level" which is a global percentage of the run time for all irrigation programs
     -   ![](./images/rain-delay.png) allows suspending irrigation for all stations except ones that have been set to ignore rain on the **Stations page**
-    -   ![](./images/manual.png) switches the system between automatic mode, and manual mode which allows direct control of stations
-
-        CAUTION:
-
-        Setting this to Manual mode will prevent any scheduled programs from running.
+    -   ![](./images/manual.png) switches the system between automatic mode, and manual mode. Manual mode allows direct control of stations  
+        CAUTION: Setting this to Manual mode will prevent any scheduled programs from running.
 
 -   A time line that provides information about completed and scheduled irrigation events ![](./images/timeline.png)
 
