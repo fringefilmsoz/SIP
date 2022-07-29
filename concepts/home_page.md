@@ -23,7 +23,7 @@ The Home page is the main control center of SIP's web interface. It includes:
 -   ![](./images/stop-all.png) immediately cancels a running irrigation program or station
 
 -   A footer that is present on all pages. The footer includes:
-    1.  A Help button ![](./images/help_button.png) which opens a separate browser tab with content from the project's Documentation Wiki
+    1.  A Help button ![](./images/help_button.png) which opens a separate browser tab with content from SIP's Documentation Wiki
     2.  ![](./images/temperature.png) The Temperature of the Raspberry Pi's CPU. The displayed temperature can be toggled between C and F by clicking the temperature displayed.
     3.  A link to the project's software repository and the revision number of the installed software
 
