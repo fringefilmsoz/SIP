@@ -4,7 +4,7 @@ For improved security it is recommended that you change the SIP password from th
 
 1.  Click the **Manage Passphrase** bar to expand the section.
 
-    ![](./images/manage_passphrase.png)
+    ![](../images/manage_passphrase.png)
 
 2.  Enter the current passphrase into the first text box
 
@@ -14,7 +14,7 @@ For improved security it is recommended that you change the SIP password from th
 
     Your passphrase can be one word or a short phrase containing spaces.
 
-4.  Click the ![](./images/submit-changes.png) button at the bottom of the page.
+4.  Click the ![](../images/submit-changes.png) button at the bottom of the page.
 
 
 You will return to the home page. Your new passphrase will be required the next time you log in.

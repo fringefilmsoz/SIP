@@ -1,7 +1,7 @@
 # SIP Web Interface Guide
-- 	[About the login page](about_login)
+- 	[login page](about_login)
 	-   [Using a passphrase](passphrase_login)
--   [About the Home page](home_page)
+-   [Home page](home_page)
 -   [Programs page](programs_page)
     -   [Enable or Disable a Program](enable_disable_program)
 -   [Run Once page](run_once_page)
