@@ -6,7 +6,7 @@ Logging in to SIP with a passphrase can help protect your SIP settings from acci
 
 2.  Select the **Enable passphrase** check box.
 
-3.  Click ![](./images/submit-changes.png) at the bottom of the page.
+3.  Click ![](./images/submit_changes.png) at the bottom of the page.
 
     ![](./images/logout_btn.png) has now been added to the navigation bar at the top of the page.
 
@@ -18,6 +18,4 @@ Logging in to SIP with a passphrase can help protect your SIP settings from acci
 
     The default passphrase is **opendoor**.
 
-    When you log in with a passphrase you begin a session. The session remains active as long as sip is open in the browser.
-
-    If you close SIP's browser tab without logging out, you can re-open SIP with the same browser without the passphrase for a period of 24 hours. After 24 hours the session will expire and you will need to use your passphrase to log in again.
+    Wen you log in with a passphrase you begin a session. If you close SIP's browser tab without logging out, you can re-open SIP with the same browser without the passphrase.
