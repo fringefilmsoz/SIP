@@ -8,7 +8,7 @@ Logging in to SIP with a passphrase can help protect your SIP settings from acci
 
 3.  Click ![](./images/submit_changes.png) at the bottom of the page.
 
-    ![](../images/logout_btn.png) has now been added to the navigation bar at the top of the page.
+    ![](./images/logout_btn.png) has now been added to the navigation bar at the top of the page.
 
 4.  Click the logout button to exit SIP.
 
