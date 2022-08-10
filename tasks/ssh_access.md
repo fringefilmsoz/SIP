@@ -28,4 +28,9 @@ If you installed Raspberry Pi OS using the Imager app as described in **Installi
 
     <pre>hostname -I</pre>
 
-    Make a note of the IP address that is shown as the first part of the response \(up to the first space\). It will be needed for accessing SIP's user interface.
+    Make a note of the IP address that is shown as the first part of the response \(up to the first space\). It will be needed for accessing SIP's user interface.  
+
+**Related information**  
+[Installing Raspberry Pi OS for SIP](pi_os_for_sip)  
+[Using the install script](using_install.sh)  
+[Step-by-step installation](install_steps)
