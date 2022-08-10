@@ -58,7 +58,7 @@ Installing SIP requires entering a few commands using a command-line interface. 
 
     ![](./images/Pi_imager-11.png)
 
-13. Click the **SAVE**button when your settings are complete.
+13. Click the **SAVE** button when your settings are complete.
 
     ![](./images/Pi_imager-12.png)
 
