@@ -13,11 +13,10 @@ If you installed Raspberry Pi OS using the Imager app as described in **Installi
 
 1.  Open a terminal window on your computer
 
-2.  Enter the ssh command
+2.  Enter the ssh command  
+    Replacing **[username]** with the user name you used and **[hostname]** with the name you gave the system.
 
     <pre>ssh [username]@[hostname]</pre>
-
-    Replacing **[username]** with the user name you used and **[hostname]** with the name you gave the system.
 
     The first time you access the Pi you may see a security warning. Answer **yes** to continue.
 
