@@ -25,4 +25,4 @@
 7.  Tap the **Enter key** to reboot the Pi.
 
 **Related information**  
-[Accessing the Pi using SSH](ssh_access.md)
+[Accessing the Pi using SSH](ssh_access)
