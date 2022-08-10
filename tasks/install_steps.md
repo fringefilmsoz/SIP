@@ -51,11 +51,11 @@ Linux commands on the Raspberry Pi are case sensitive.
 
 7.  Enter the Pi's IP address into a web browser on a system connected to the same network as the Pi.
 
-    The home page if SIP's web based user interface \(UI\) will open.
+    The home page of SIP's web based user interface \(UI\) will open.
 
 8.  Close SIP.s browser tab.
 
-9.  In the SIP folder double click the sip\_service.sh file or run the command
+9.  In the SIP folder run the command
 
     <pre>sudo ./sip_service.sh</pre>
 
