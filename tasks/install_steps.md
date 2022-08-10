@@ -15,7 +15,7 @@ Linux commands on the Raspberry Pi are case sensitive.
 
 ## Clone SIP from GitHub
 
-1.  Update the OSwith the following commands:
+1.  Update the OS with the following commands:
 
     <pre>apt update</pre>
 
