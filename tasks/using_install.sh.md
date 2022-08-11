@@ -25,7 +25,7 @@
 7.  Tap the **Enter key** to reboot the Pi.
 
 **Related information**  
-[Installing Raspberry Pi OS for SIP](pi_os_for_sip) 
-[Accessing the Pi using SSH](ssh_access)
+[Installing Raspberry Pi OS for SIP](pi_os_for_sip)  
+[Accessing the Pi using SSH](ssh_access)  
 [Step-by-step installation](install_steps)  
 [Home](Home)
