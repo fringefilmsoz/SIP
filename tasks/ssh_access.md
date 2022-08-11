@@ -1,6 +1,6 @@
 # Accessing the Pi using SSH
 
-If you installed Raspberry Pi OS using the Imager app as described in **Installing Raspberry Pi OS for SIP** you should now be able to access the Pi using Secure Shell \(SSH\) from a computer running one of the following operating systems:
+If you installed Raspberry Pi OS using the Imager app as described in **Installing Raspberry Pi OS for SIP**. Or if you have enabled SSH on the Pi, you should now be able to access the Pi using Secure Shell \(SSH\) from a computer running one of the following operating systems:
 
 -   Windows 10 with October 2018 Update or later
 -   Windows 11
