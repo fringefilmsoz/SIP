@@ -21,3 +21,4 @@ There are two ways SIP can be installed:
 [Installing Raspberry Pi OS for SIP](pi_os_for_sip)  
 [Using the install script](using_install.sh)  
 [Step-by-step installation](install_steps)
+[Home](Home)
