@@ -67,8 +67,9 @@ Linux commands on the Raspberry Pi are case sensitive.
 
     After the Pi has rebooted SIP will be up and running, ready to be connected to your irrigation / sprinkler system and programmed with your irrigation schedules.
 
-[Installing SIP](install_info)
-[Installing Raspberry Pi OS for SIP](pi_os_for_sip) 
-[SSH Access](ssh_access)   
-[Using the install script](using_install.sh)   
+**Related information** 
+[Installing SIP](install_info)  
+[Installing Raspberry Pi OS for SIP](pi_os_for_sip)  
+[SSH Access](ssh_access)  
+[Using the install script](using_install.sh)  
 [Home](Home)
