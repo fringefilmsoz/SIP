@@ -6,7 +6,7 @@
     **Remember:**
     Commands on the Raspberry Pi are case sensitive.  
 
-    <pre>curl -sSL https://gitlab.com/seventer/sip\_setup/-/raw/main/sip\_setup.sh | sudo bash</pre>
+    <pre>curl -sSL https://gitlab.com/seventer/sip_setup/-/raw/main/sip_setup.sh | sudo bash</pre>
   
     The SIP setup menu will appear
 
