@@ -20,7 +20,8 @@
 
 6.  Tap the **Enter key** again to install SIP.
 
-    Depending on the options selected, the install process may take a few minutes to complete. A dialog box will appear when SIP is installed.
+    Depending on the options selected, the install process may take a few minutes to complete.  
+    A dialog box will appear when SIP is installed.
 
 7.  Tap the **Enter key** to reboot the Pi.
 
