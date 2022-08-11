@@ -70,4 +70,7 @@ Installing SIP requires entering a few commands using a command-line interface. 
 **Related information**  
 [Raspberry Pi Imager](https://www.raspberrypi.com/software/)  
 [Electronic Frontier Foundation Secure passphrases](https://www.eff.org/dice)  
+[SSH Access](ssh_access)   
+[Using the install script](using_install.sh)  
+[Step-by-step installation](install_steps)  
 [Home](Home)
