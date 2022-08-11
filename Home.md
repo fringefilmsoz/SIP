@@ -1,11 +1,11 @@
 # Welcome to the SIP documentation wiki!  
 
 ##### Here you will find documentation for:
--[Installing SIP](install_info)
- -[Installing Raspberry Pi OS for SIP](pi_os_for_sip) 
- -[SSH Access](ssh_access)   
- -[Using the install script](using_install.sh)  
- -[Step-by-step installation](install_steps)  
+- [Installing SIP](install_info)
+ - [Installing Raspberry Pi OS for SIP](pi_os_for_sip) 
+ - [SSH Access](ssh_access)   
+ - [Using the install script](using_install.sh)  
+ - [Step-by-step installation](install_steps)  
 - Web Interface (UI) Help - See sidebar ->
 - [Translating the web interface into your favorite language](Translation-doc)
 - [Reverse Proxy Support](Reverse-proxy)
