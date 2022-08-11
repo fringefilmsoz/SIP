@@ -15,7 +15,7 @@ For a SIP installation **Raspberry Pi OS Lite** with headless (SSH or WiFi) acce
 ## Installation methods
 
 There are two ways SIP can be installed:  
--   Using a script that automates the process.
+-   Using a script that automates the process. Recommended
 -   By entering commands in a step-by-step procedure.
 
 **Related information**  
