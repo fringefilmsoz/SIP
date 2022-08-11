@@ -2,7 +2,7 @@
 
 ## What you will need:
 
--   Any model of Raspberry Pi that has Ethernet or WiFi support.
+-   Any model Raspberry Pi that has Ethernet or WiFi support.
 
     **Note:**
     Considering that SIP is intended to be running 24/7 for years, a Raspberry Pi with a low power requirement is recommended. A model 3 B or 3 B+ is a good choice for easy set up.
