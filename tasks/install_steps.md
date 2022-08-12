@@ -72,5 +72,5 @@ Linux commands on the Raspberry Pi are case sensitive.
 [Installing Raspberry Pi OS for SIP](pi_os_for_sip)  
 [SSH Access](ssh_access)  
 [Using the install script](using_install.sh) 
-[Opening the SIP web interface](ui_access) 
+[Opening the SIP web interface](ui_access)  
 [Home](Home)
