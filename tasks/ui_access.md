@@ -1,6 +1,6 @@
 # Opening the SIP web interface
 
-SIP uses Internet technology to provide a User Interface (UI) in the form of a local self hosted web site. You can access the web interface from most devices with a browser such as a laptop, tablet, or phone.  
+SIP uses Internet technology to provide a User Interface (UI) in the form of a local, self hosted, web site. You can access the web interface from most devices with a browser such as a laptop, tablet, or phone.  
 With the Pi booted up and SIP running use one of the steps below to open the UI .
 
 **Note:**
