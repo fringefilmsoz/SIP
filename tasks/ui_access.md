@@ -1,7 +1,7 @@
 # Opening the SIP web interface
 
 SIP uses Internet technology to provide a User Interface (UI) in the form of a local, self hosted, web site. You can access the web interface from most devices with a browser such as a laptop, tablet, or phone.  
-With the Pi booted up and SIP running use one of the steps below to open the UI .
+With the Pi booted up and SIP running, use one of the steps below to open the UI .
 
 **Note:**
 If the default HTTP port 80 has been changed, you will need to add a colon (**:**) followed by the new port number to the address shown below.
