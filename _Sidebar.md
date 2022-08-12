@@ -1,4 +1,5 @@
 # SIP Web Interface Guide
+-   [Opening the SIP web interface](ui_access)
 - 	[login page](about_login)
 	-   [Using a passphrase](passphrase_login)
 -   [Home page](home_page)
