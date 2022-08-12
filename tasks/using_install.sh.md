@@ -29,6 +29,6 @@
 
 **Related information**  
 [Installing Raspberry Pi OS for SIP](pi_os_for_sip)  
-[Accessing the Pi using SSH](ssh_access)
-[Opening the SIP web interface](ui_access)   
+[Accessing the Pi using SSH](ssh_access)  
+[Opening the SIP web interface](ui_access)  
 [Home](Home)
