@@ -11,7 +11,7 @@ There are several simpler alternatives to a reverse proxy if you would like to e
 at the root domain (e.g. https://mydomain.com ), at a subdomain (e.g. https://sip.mydomain.com) or on another port (e.g. https://mydomain.com:8080).
 A reverse proxy is useful if you want meet the following 3 requirements.
 
-* Host multiple web-based services from a single FQDN. (http://mydomain.com/ospi and https://mydomain.com/otherservice)
+* Host multiple web-based services from a single FQDN. (http://mydomain.com/sip and https://mydomain.com/otherservice)
 * Use standard web traffic ports for all services (80,443)
 * Use a single SSL certificate for all services
 
@@ -19,7 +19,7 @@ The last point is really the key. Most of the simpler options mentioned above wo
 Central Authority (CA) such [Let's Encrypt](https://letsencrypt.org/) or a pay CA like Verisign, Network Solutions, etc for each service you wish to host securely. The exception is hosting on another port. 
 You could use a single certificate for multiple ports, but you would need to configure your router to forward each new port to the correct internal IP. 
 
-You could also use self-signed certificates but you would receive browser security warnings and trying to use the mobile app would most likely not work.
+You could also use self-signed certificates but you would receive browser security warnings.
 
 > Regardless of how you expose SIP to the internet, iF you do it is HIGHLY RECOMMENDED that you access SIP over an secure SSL connection. 
 
@@ -50,7 +50,7 @@ Below is a sample NGINX configuration. Setting up NGINX and configuring it to fo
 
       access_log  /usr/local/var/log/nginx/access.log upstreamlog;
    
-      # sets up the sub-path to SIP (i.e. https://mydomain.com/ospi/)  by setting the location '/sip/'
+      # sets up the sub-path to SIP (i.e. https://mydomain.com/sip/)  by setting the location '/sip/'
       # removing SSL (since SIP isn't configured for it), and
       # adds information to the request that SIP used to construct the correct links
       # in the SIP application (i.e. https://mydomain/sip/page.html instead of http://xxx.xxx.xxx.xxx:8080/page.html)
