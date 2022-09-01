@@ -3,7 +3,7 @@
 The Home page is the main control center of SIP's web interface. It includes:
 
 -   A clock showing the current time and date at the location of the controller. This also appears on all pages.
--   A navigation bar at the top for moving between pages of the interface. This is also present on the other pages except the optional login page.
+-   A navigation bar at the top allows moving between pages of the interface. This is also present on the other pages except the optional login page.
 
     ![](./images/nav-bar.png)
 
