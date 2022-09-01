@@ -26,4 +26,5 @@
     -   [Rain Sensor](rain_sensor)
     -   [Logging](logging)
     -   [System Restart](system_restart)
+-   [Stations page](stations_page)
 
