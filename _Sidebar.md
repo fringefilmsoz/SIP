@@ -7,6 +7,8 @@
     -   [Enable or Disable a Program](enable_disable_program)
 -   [Run Once page](run_once_page)
 -   [Options page](options_page)
+    -   <details><summary>System section</summary>
+
     -   [System Section](system_section)
         -   [Show Tooltips](show_tooltips)
         -   [Set System name](set_system_name)
@@ -15,7 +17,7 @@
         -   [Clock format](clock_format)
         -   [About the HTTP port number](about_port80)
             -   [HTTP port](set_port)
-        -   [Set Water Scaling](water_scaling)
+        -   [Set Water Scaling](water_scaling)</details?>
     -   [Change password](change_password)
     -   [Station Handling](Station_handling)
         -   [About Sequential and Concurrent modes](about_sequential)
