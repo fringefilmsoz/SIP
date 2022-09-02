@@ -17,7 +17,8 @@
         -   [Clock format](clock_format)
         -   [About the HTTP port number](about_port80)
             -   [HTTP port](set_port)
-        -   [Set Water Scaling](water_scaling)</details?>
+        -   [Set Water Scaling](water_scaling)</details>
+
     -   [Change password](change_password)
     -   [Station Handling](Station_handling)
         -   [About Sequential and Concurrent modes](about_sequential)
