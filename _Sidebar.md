@@ -8,7 +8,6 @@
 -   [Run Once page](run_once_page)
 -   [Options page](options_page)
     -   <details><summary>System section</summary><blockquote>
-
         -   [System Section](system_section)
         -   [Show Tooltips](show_tooltips)
         -   [Set System name](set_system_name)
