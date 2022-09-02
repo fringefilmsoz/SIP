@@ -9,7 +9,7 @@
 -   [Options page](options_page)
     -   <details><summary>System section</summary><blockquote>
 
-        -   [System Section](system_section)
+        -   [About the system Section](system_section)
         -   [Show Tooltips](show_tooltips)
         -   [Set System name](set_system_name)
         -   [Set Location](set_location)
@@ -18,7 +18,6 @@
         -   [About the HTTP port number](about_port80)
             -   [HTTP port](set_port)
         -   [Set Water Scaling](water_scaling)</blockquote></details>  
-
     -   [Change password](change_password)
     -   [Station Handling](Station_handling)
         -   [About Sequential and Concurrent modes](about_sequential)
