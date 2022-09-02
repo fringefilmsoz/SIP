@@ -8,9 +8,9 @@
 -   [Run Once page](run_once_page)
 -   [Options page](options_page)
     -   <details><summary>System Section</summary>
-        -   [About the system Section](system_section)
-        -   [Show Tooltips](show_tooltips)
-        -   [Set System name](set_system_name)
+<p>        -   [About the system Section](system_section)</p>
+<p>        -   [Show Tooltips](show_tooltips)</p>
+<p>        -   [Set System name](set_system_name)</p>
         -   [Set Location](set_location)
         -   [Select Language](select_language)
         -   [Clock format](clock_format)
